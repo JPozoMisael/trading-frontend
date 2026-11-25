@@ -1,0 +1,76 @@
+/*
+ * Tokens de la Mesa de análisis.
+ * Grafito petróleo + latón. El latón SOLO marca el umbral del 50 % y la selección:
+ * si aparece en otro sitio, pierde su significado.
+ */
+:root {
+  color-scheme: dark;
+
+  /* superficies */
+  --bg: #0c171c;
+  --surface: #0f1b21;
+  --panel: #142229;
+  --raised: #1a2b33;
+  --line: #22343c;
+  --line-strong: #2f454f;
+
+  /* tinta */
+  --ink: #e6ecee;
+  --ink-2: #a9b8be;
+  --ink-3: #7a8d95;
+
+  /* significado */
+  --brass: #c9a23a; /* umbral y selección */
+  --brass-soft: rgba(201, 162, 58, 0.16);
+  --up: #199e70; /* vela alcista (hueca), compra */
+  --down: #e0605a; /* vela bajista, venta */
+  --up-soft: rgba(25, 158, 112, 0.18);
+  --down-soft: rgba(224, 96, 90, 0.16);
+  --ema-fast: #3987e5; /* EMA 50 */
+  --ema-slow: #8a9ba2; /* EMA 200: neutra y más gruesa (se distingue por luz y grosor) */
+  --draw: #d4dee2; /* dibujos del usuario: tinta neutra */
+
+  /* estado (con icono + texto, nunca solo color) */
+  --good: #0ca30c;
+  --warning: #fab219;
+  --critical: #d03b3b;
+
+  /* tipografía: una familia, dos anchos */
+  --font: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-cond: 'IBM Plex Sans Condensed', 'IBM Plex Sans', system-ui, sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-md: 0.9375rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2.25rem;
+
+  /* geometría: radios por jerarquía, no uno para todo */
+  --r-control: 6px;
+  --r-panel: 10px;
+  --gap: 12px;
+  --rail: 48px;
+}
+
+/* Tema claro: pasos propios, no el oscuro invertido */
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #e9eef0;
+  --surface: #f6f8f9;
+  --panel: #ffffff;
+  --raised: #eef2f4;
+  --line: #d5dee2;
+  --line-strong: #b9c7cd;
+  --ink: #12222a;
+  --ink-2: #3f545d;
+  --ink-3: #61757e;
+  --brass: #9a7612;
+  --brass-soft: rgba(154, 118, 18, 0.14);
+  --up: #13845f;
+  --down: #c2433d;
+  --up-soft: rgba(19, 132, 95, 0.12);
+  --down-soft: rgba(194, 67, 61, 0.12);
+  --ema-fast: #2a78d6;
+  --ema-slow: #6b7d85;
+  --draw: #2b3d45;
+}
